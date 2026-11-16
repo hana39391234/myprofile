@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- ↑「これはHTMLのページです」という宣言。毎回いちばん上に書く -->
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!-- スマホでも見やすく表示するための設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ブラウザのタブに表示される名前 -->
+  <title>自己紹介ページ</title>
+
+  <style>
+    /* ここからCSS（見た目の設定）。まずは色を変えて遊んでみよう */
+    body {
+      font-family: sans-serif;     /* 文字の種類 */
+      color: #333333;              /* 文字の色 */
+      background-color: #f7f7fb;   /* 背景の色 */
+      margin: 0;                   /* 外側の余白をなくす */
+      line-height: 1.8;            /* 行の間隔 */
+    }
+    header {
+      background-color: #e85d75;   /* ← ここの色を変えてみよう */
+      color: white;
+      text-align: center;
+      padding: 48px 16px;          /* 内側の余白（上下 左右） */
+    }
+    main {
+      max-width: 640px;            /* 横幅の上限（パソコンで広がりすぎない） */
+      margin: 0 auto;              /* 左右の中央寄せ */
+      padding: 24px 16px;
+    }
+    section {
+      background-color: white;
+      border-radius: 12px;         /* 角を丸くする */
+      padding: 16px 24px;
+      margin-bottom: 16px;
+    }
+    h2 { color: #ff8a3d; }
+    a  { color: #4f6df5; }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #888888;
+      padding: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header：ページの顔にあたる部分 -->
+  <header>
+    <h1>ひな</h1>
+    <p>大学生 ／ Web制作を勉強中</p>
+  </header>
+
+  <!-- main：ページの中身 -->
+  <main>
+    <section>
+      <h2>自己紹介</h2>
+      <p>
+        はじめまして。大学で会計を学んでいます。
+        いまはWeb制作を勉強していて、AIを活用しながらサイトを作っています。
+	いぬがすき
+      </p>
+    </section>
+
+    <section>
+      <h2>好きなこと・得意なこと</h2>
+      <!-- ul/li：箇条書きのタグ -->
+      <ul>
+        <li>英語</li>
+        <li>会計</li>
+        <li>経営</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>いま取り組んでいること</h2>
+      <p>週5時間でWeb制作を勉強し、2か月で実績を2つ作るのが目標です。</p>
+    </section>
+
+    <section>
+      <h2>リンク</h2>
+      <!-- a：リンクのタグ。href に行き先のURLを入れる -->
+      <p><a href="https://example.com">ここにリンクを入れる</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ひな</p>
+  </footer>
+</body>
+</html>
